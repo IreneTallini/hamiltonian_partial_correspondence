@@ -1,0 +1,9 @@
+function stats = mystatsfunC(problem, x, stats)
+    stats.data_cost = data_term_C(x, A, Psi_fcts, lump_mass_mat_M,...
+        G, v, r, k, mu_3, mu_45, W);
+    stats.mu_3_cost = mu_3 * mu_3_term_C(x, A, Psi_fcts, lump_mass_mat_M,...
+        G, v, r, k, mu_3, mu_45, W);
+    stats.mu_45_cost = mu_45 * mu_45_term_C(x, A, Psi_fcts, lump_mass_mat_M,...
+        G, v, r, k, mu_3, mu_45, W);
+    stats.list_C = x;
+end
