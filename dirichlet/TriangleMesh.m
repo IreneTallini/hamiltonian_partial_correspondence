@@ -173,6 +173,7 @@ classdef TriangleMesh < handle
                bids = obj.boundary_vertices();
                S = sparse(obj.n, obj.n);
                S(bids, bids) = eye(length(bids));
+               % Qui dovrebbe essere S(nbids, nbids) = obj.STIFFNESS(nbids, nbids);
                S(nbids,:) = obj.STIFFNESS(nbids, :);
                obj.STIFFNESS = S;
            end
