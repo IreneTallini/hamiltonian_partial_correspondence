@@ -5,7 +5,7 @@ clear all
 
 % load a shape with a boundary
 N = load_off('./cuts_david_shape_1.off');
-k = 100;
+k = 20;
 
 %% così calcolo solo gli autovalori
 % NOTA: in questo modo non posso ottenere l'operatore di schroedinger
